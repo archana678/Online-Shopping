@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="header">
+            <a href="#home" class="logo">Shopping</a>
+            <div class="navbar">
+                <ul class="list">
+                    <li><a class="menu-toggle" href="#home">Home</a></li>
+                    <li><a class="menu-toggle" href="#products">Products</a></li>
+                    <li><a class="menu-toggle" href="#offer">Offer</a></li>
+                    <li><a class="menu-toggle" href="#review">Review</a></li>
+                    <li><a class="menu-toggle" href="#newsletter">Newsletter</a></li>
+
+                </ul>
+            </div>
+            <div class="access">
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+            </div>
+        </div>
+        <div class="content">
+            <form class="search">
+                <input type="text" class="search-content" placeholder="search for products">
+                <button type="submit" class="search-button">
+                    <label for="search-bar" class="fas fa-search"></label>
+                </button>
+            </div>
+        </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+    </nav>
+    <div class="form-1">
+        <div class="login-form">
+            <a href="#" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <strong>Log In</strong>
+            <form>
+                <input type="email" placeholder="Example@gmail.com" name="email">
+                <input type="password" placeholder="Password" name="password">
+                 <input type="submit" value="Log In">
+               </form>
+               <div class="form-btns">
+               <a href="#" class="forget-password">Forget Your Password</a>
+               <a href="#" class="sign-up-btn">Create Account</a>
+        </div>
+       </div>
+   </div>
+
+       <div class="form-2">
+       <div class="sign-up-form">
+           <a href="#" class="form-cancel">
+               <i class="fas fa-times"></i>
+           </a>
+           <strong>Sign Up</strong>
+           <form>
+               <input type="text" placeholder="Name" name="name">
+               <input type="email" placeholder="Example@gmail.com" name="email">
+               <input type="password" placeholder="Password" name="password">
+                <input type="submit" value="Sign Up">
+              </form>
+              <div class="form-btns">
+              <a href="#" class="forget">Already have account?</a>
+       </div>
+      </div>
+    </div> 
+    <!--Home Section-->
+    <section class="home" id="home">
+        <ul id="autoWidth" class="cs-hidden">
+            <li class="item-a">
+                <div class="image">
+                    <img src="2.jpg" alt="image">
+                </div>
+                <div class="information">
+                    <h1 class="heading">Men's Shoes</h1>
+                    <p class="description">Lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">Rs 2,999/-</div>
+                    <a href="#"><button class="btn">Buy Now</button></a>
+                </div>
+            </li>
+            <li class="item-a">
+                <div class="image">
+                    <img src="14.webp" alt="image">
+                </div>
+                <div class="information">
+                    <h1 class="heading">Women's Shoes</h1>
+                    <p class="description">Lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">Rs 2999/-</div>
+                    <a href="#"><button class="btn">Buy Now</button></a>
+                </div>
+            </li>
+            <li class="item-a">
+                <div class="image">
+                    <img src="24.jpg"  alt="image">
+                </div>
+                <div class="information">
+                    <h1 class="heading">Kid's Shoes</h1>
+                    <p class="description">Lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">Rs 2999/-</div>
+                    <a href="#"><button class="btn">Buy Now</button></a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!--Product Section-->
+    <section class="products" id="products">
+        <h1 class="title">Products</h1>
+        <h2 class="sub-title">Men's Shoes</h2>
+        <ul id="adaptive" class="cs-hidden">
+            <li class="item">
+                <div class="card">
+                    <img src="2.jpg"  alt="image">
+                    <h3>Shoes-1</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+            <li class="item">
+                <div class="card">
+                    <img src="3.jpg"  alt="image">
+                    <h3>Shoes-2</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+            <li class="item">
+                <div class="card">
+                    <img src="4.jpg"  alt="image">
+                    <h3>Shoes-3</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+            <li class="item">
+                <div class="card">
+                    <img src="5.jpg" alt="image">
+                    <h3>Shoes-4</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+            <li class="item">
+                <div class="card">
+                    <img src="6.jpg" alt="image">
+                    <h3>Shoes-5</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+            <li class="item">
+                <div class="card">
+                    <img src="7.jpg" alt="image">
+                    <h3>Shoes-6</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+            <li class="item">
+                <div class="card">
+                    <img src="8.jpg" alt="image">
+                    <h3>Shoes-7</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+        </ul>
+        <h2 class="sub-title">Women's Shoes</h2>
+        <ul id="autowidth" class="cs-hidden">
+            <li class="item">
+                <div class="card">
+                    <img src="9.jpg" alt="image">
+                    <h3>Shoes-1</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+            <li class="item">
+                <div class="card">
+                    <img src="10.jpg" alt="image">
+                    <h3>Shoes-2</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+            <li class="item">
+                <div class="card">
+                    <img src="11.jpg" alt="image">
+                    <h3>Shoes-3</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+            <li class="item">
+                <div class="card">
+                    <img src="12.jpg" alt="image">
+                    <h3>Shoes-4</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+            <li class="item">
+                <div class="card">
+                    <img src="13.jpg" alt="image">
+                    <h3>Shoes-5</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+            <li class="item">
+                <div class="card">
+                    <img src="14.webp" alt="image">
+                    <h3>Shoes-6</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+            <li class="item">
+                <div class="card">
+                    <img src="15.jpg" alt="image">
+                    <h3>Shoes-7</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+            <li class="item">
+                <div class="card">
+                    <img src="16.jpg" alt="image">
+                    <h3>Shoes-8</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+        </ul>
+        <h2 class="sub-title">Kid's Shoes</h2>
+        <ul id="auto" class="cs-hidden">
+            <li class="item">
+                <div class="card">
+                    <img src="17.jpg" alt="image">
+                    <h3>Shoes-1</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+            <li class="item">
+                <div class="card">
+                    <img src="17.jpg" alt="image">
+                    <h3>Shoes-2</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+            <li class="item">
+                <div class="card">
+                    <img src="18.jpg" alt="image">
+                    <h3>Shoes-3</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+            <li class="item">
+                <div class="card">
+                    <img src="19.jpg" alt="image">
+                    <h3>Shoes-4</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+            <li class="item">
+                <div class="card">
+                    <img src="20.jpg" alt="image">
+                    <h3>Shoes-5</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+            <li class="item">
+                <div class="card">
+                    <img src="21.jpg" alt="image">
+                    <h3>Shoes-6</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+            <li class="item">
+                <div class="card">
+                    <img src="22.jpg" alt="image">
+                    <h3>Shoes-7</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+            <li class="item">
+                <div class="card">
+                    <img src="23.jpg" alt="image">
+                    <h3>Shoes-8</h3>
+                    <p>Lorem ipsum dolar smit</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price-tag">Rs 2599 <span class="discount">Rs 3599</span> <span
+                            class="offer">25%OFF</span></div>
+                    <a href="#"><button class="btn-1">Add To Cart<i class="fas fa-shopping-cart"></i></button></a>
+                    <a href="#"><button class="btn-2">Wishlist<i class="fas fa-heart"></i></button></a>
+                    <a href="#"><button class="btn">Buy now</button></a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!--Offer Section-->
+    <section class="offer-sec" id="offer">
+        <h1 class="title">Deal of the day</h1>
+        <div class="offer-content">
+            <div class="offer-box">
+                <i class="fas fa-truck"></i>
+                <h2 class="offer-title">Free Shipping</h2>
+            </div>
+            <div class="offer-box">
+                <i class="fas fa-money-bill-alt"></i>
+                <h2 class="offer-title">Easy Payments</h2>
+            </div>
+            <div class="offer-box">
+                <i class="fas fa-calendar-alt"></i>
+                <h2 class="offer-title">15 Days Replacements</h2>
+            </div>
+        </div>
+        <div class="offer-card">
+            <div class="offer-info">
+                <h1>Kid's Shoe</h1>
+                <p>Upto 30% Off on First Shopping.</p>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Rs 1999/-</div>
+                <a href="#"><button class="btn">Buy Now</button></a>
+            </div>
+            <div class="image">
+                <img src="24.jpg" alt="image">
+            </div>
+        </div>
+    </section>
+    <!--Review Section-->
+    <section class="review" id="review">
+        <h1 class="title">Our Customer Review</h1>
+        <ul id="width" class="cs-hidden">
+            <li class="item-a">
+                <div class="review-content">
+                    <p><i class="fas fa-quote-left"></i>Lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar
+                        smit lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit
+                        lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit
+                        lorem ipsum dolar smit<i class="fas fa-quote-right"></i></p>
+                </div>
+            </li>
+            <li class="item-a">
+                <div class="review-content">
+                    <p><i class="fas fa-quote-left"></i>Lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar
+                        smit lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit
+                        lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit
+                        lorem ipsum dolar smit<i class="fas fa-quote-right"></i></p>
+                </div>
+            </li>
+            <li class="item-a">
+                <div class="review-content">
+                    <p><i class="fas fa-quote-left"></i>Lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar
+                        smit lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit
+                        lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit
+                        lorem ipsum dolar smit<i class="fas fa-quote-right"></i></p>
+                </div>
+            </li>
+            <li class="item-a">
+                <div class="review-content">
+                    <p><i class="fas fa-quote-left"></i>Lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar
+                        smit lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit
+                        lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit
+                        lorem ipsum dolar smit<i class="fas fa-quote-right"></i></p>
+                </div>
+            </li>
+            <li class="item-a">
+                <div class="review-content">
+                    <p><i class="fas fa-quote-left"></i>Lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar
+                        smit lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit
+                        lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit lorem ipsum dolar smit
+                        lorem ipsum dolar smit<i class="fas fa-quote-right"></i></p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!--newslettetr section-->
+    <section class="newsletter" id="newsletter">
+        <h1>Newsletter</h1>
+        <p>Subscribe us for the latest updates</p>
+        <input type="text" class="input-containt" placeholder="subscribe">
+        <input type="submit" class="btn" value="subscribe">
+    </section>
+    <script src="script.js"></script>
+    <footer>
+        <div class="footer-box">
+            <div class="footer-containt">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#offer">Offer</a></li>
+                    <li><a href="#review">Review</a></li>
+                    <li><a href="#newsletter">Newsletter</a></li>
+                </ul>
+            </div>
+            <div class="footer-icons">
+                <p><a href="#"><i class="fab fa-facebook"></i></a>Facebook</p>
+                <p><a href="#"><i class="fab fa-instagram"></i></a>Instagram</p>
+                <p><a href="#"><i class="fas fa-envelope"></i></a>Envelope</p>
+            </div>
+        </div>
+        <div class="footer-text">Online Shopping @ 2021</div>
+    </footer>
+</body>
+
+</html>
